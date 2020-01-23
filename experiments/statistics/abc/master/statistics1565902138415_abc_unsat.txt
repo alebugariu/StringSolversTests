@@ -1,0 +1,21 @@
+Statistics for abc for the unsat case:
+Number of generated tests: 198
+Number of passed tests: 93
+Number of failed tests: 105
+Transformation: eqForm
+	Number of generated tests: 6
+	Number of passed tests: 2
+	Number of failed tests: 4
+			sat: 4
+Transformation: redundant
+	Number of generated tests: 71
+	Number of passed tests: 35
+	Number of failed tests: 36
+			sat: 36
+Transformation: unsatCore
+	Number of generated tests: 121
+	Number of passed tests: 56
+	Number of failed tests: 65
+			sat: 63
+			error: 2
+

@@ -1,0 +1,23 @@
+Statistics for cvc4 for the unsat case:
+Number of generated tests: 458
+Number of passed tests: 120
+Number of failed tests: 338
+Transformation: eqForm
+	Number of generated tests: 12
+	Number of passed tests: 5
+	Number of failed tests: 7
+			timeout: 7
+Transformation: redundant
+	Number of generated tests: 178
+	Number of passed tests: 26
+	Number of failed tests: 152
+			incorrect_unsat_core: 23
+			timeout: 125
+			error: 4
+Transformation: unsatCore
+	Number of generated tests: 268
+	Number of passed tests: 89
+	Number of failed tests: 179
+			timeout: 177
+			error: 2
+

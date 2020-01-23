@@ -1,0 +1,25 @@
+--- Downloads/z3-z3-4.7.1/src/api/java/Context.java	2018-05-22 19:19:38.000000000 +0200
++++ Context.java	2018-10-08 11:19:31.000000000 +0200
+@@ -1978,6 +1978,22 @@
+     }
+     
+     /**
++     * Convert an integer expression to a string.
++     */
++    public SeqExpr intToString(Expr e) 
++    {
++		return (SeqExpr) Expr.create(this, Native.mkIntToStr(nCtx(), e.getNativeObject()));
++    }
++    
++     /**
++     * Convert an integer expression to a string.
++     */
++    public IntExpr stringToInt(Expr e)  
++    {
++		return (IntExpr) Expr.create(this, Native.mkStrToInt(nCtx(), e.getNativeObject()));
++    }
++    
++    /**
+      * Concatenate sequences.
+      */
+     public SeqExpr mkConcat(SeqExpr... t)

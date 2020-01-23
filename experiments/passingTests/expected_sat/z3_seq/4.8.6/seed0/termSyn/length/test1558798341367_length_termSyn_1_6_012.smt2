@@ -1,0 +1,27 @@
+(set-option :random-seed 0)
+(set-option :produce-models true)
+(set-option :produce-unsat-cores true)
+; 
+(set-info :status sat)
+(declare-fun tmp_str5 () String)
+(declare-fun tmp_int0 () Int)
+(assert
+ (let ((?x1035 (int.to.str tmp_int0)))
+ (let ((?x1105 (str.len ?x1035)))
+ (= ?x1105 (str.to.int tmp_str5)))))
+(check-sat)
+
+(get-value (tmp_int0 tmp_str5 ))
+(get-info :reason-unknown)
+
+;tmp_int0 = -1
+;tmp_str5 = 0
+
+
+;actual status: sat
+;((tmp_int0 42)
+; (tmp_str5 "02"))
+
+;model:
+;Int tmp_int0 = 42
+;String tmp_str5 = 02

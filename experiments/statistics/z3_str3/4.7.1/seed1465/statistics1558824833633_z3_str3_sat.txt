@@ -1,0 +1,25 @@
+Statistics for z3_str3 for the sat case:
+Number of generated tests: 6120
+Number of passed tests: 5633
+Number of failed tests: 487
+Transformation: termSyn
+	Number of generated tests: 1394
+	Number of passed tests: 1042
+	Number of failed tests: 352
+			error: 122
+			unsat: 107
+			incorrect_model: 4
+			timeout: 119
+Transformation: operation
+	Number of generated tests: 12
+	Number of passed tests: 11
+	Number of failed tests: 1
+			timeout: 1
+Transformation: const
+	Number of generated tests: 4714
+	Number of passed tests: 4580
+	Number of failed tests: 134
+			unsat: 106
+			incorrect_model: 23
+			timeout: 5
+

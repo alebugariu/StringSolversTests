@@ -1,0 +1,25 @@
+Statistics for z3_seq for the unsat case:
+Number of generated tests: 254
+Number of passed tests: 98
+Number of failed tests: 156
+Transformation: redundantTriggers
+	Number of generated tests: 136
+	Number of passed tests: 93
+	Number of failed tests: 43
+			incorrect_unsat_core: 1
+			timeout: 41
+			unknown: 1
+Transformation: unsatCoreTriggers
+	Number of generated tests: 115
+	Number of passed tests: 5
+	Number of failed tests: 110
+			sat: 35
+			timeout: 73
+			unknown: 2
+Transformation: eqFormTriggers
+	Number of generated tests: 3
+	Number of passed tests: 0
+	Number of failed tests: 3
+			sat: 1
+			timeout: 2
+

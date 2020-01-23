@@ -1,0 +1,24 @@
+Statistics for z3_seq for the sat case:
+Number of generated tests: 6120
+Number of passed tests: 5010
+Number of failed tests: 1110
+Transformation: termSyn
+	Number of generated tests: 1394
+	Number of passed tests: 842
+	Number of failed tests: 552
+			incorrect_model: 2
+			timeout: 67
+			unknown: 483
+Transformation: operation
+	Number of generated tests: 12
+	Number of passed tests: 10
+	Number of failed tests: 2
+			unknown: 2
+Transformation: const
+	Number of generated tests: 4714
+	Number of passed tests: 4158
+	Number of failed tests: 556
+			unsat: 14
+			incorrect_model: 24
+			unknown: 518
+

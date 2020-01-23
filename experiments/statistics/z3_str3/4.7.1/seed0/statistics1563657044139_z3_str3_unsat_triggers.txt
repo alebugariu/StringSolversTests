@@ -1,0 +1,29 @@
+Statistics for z3_str3 for the unsat case:
+Number of generated tests: 458
+Number of passed tests: 180
+Number of failed tests: 278
+Transformation: redundantTriggers
+	Number of generated tests: 178
+	Number of passed tests: 52
+	Number of failed tests: 126
+			sat: 16
+			incorrect_unsat_core: 22
+			unknown: 8
+			timeout: 30
+			error: 50
+Transformation: unsatCoreTriggers
+	Number of generated tests: 268
+	Number of passed tests: 120
+	Number of failed tests: 148
+			sat: 6
+			incorrect_unsat_core: 7
+			unknown: 7
+			timeout: 78
+			error: 50
+Transformation: eqFormTriggers
+	Number of generated tests: 12
+	Number of passed tests: 8
+	Number of failed tests: 4
+			timeout: 3
+			error: 1
+

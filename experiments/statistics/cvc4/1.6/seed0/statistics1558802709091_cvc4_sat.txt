@@ -1,0 +1,17 @@
+Statistics for cvc4 for the sat case:
+Number of generated tests: 6120
+Number of passed tests: 6120
+Number of failed tests: 0
+Transformation: termSyn
+	Number of generated tests: 1394
+	Number of passed tests: 1394
+	Number of failed tests: 0
+Transformation: operation
+	Number of generated tests: 12
+	Number of passed tests: 12
+	Number of failed tests: 0
+Transformation: const
+	Number of generated tests: 4714
+	Number of passed tests: 4714
+	Number of failed tests: 0
+

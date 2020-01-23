@@ -1,0 +1,9 @@
+Statistics for z3_seq for the unsat case:
+Number of generated tests: 60
+Number of passed tests: 60
+Number of failed tests: 0
+Transformation: different-prefix
+	Number of generated tests: 60
+	Number of passed tests: 60
+	Number of failed tests: 0
+

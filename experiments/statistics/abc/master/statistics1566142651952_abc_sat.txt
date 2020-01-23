@@ -1,0 +1,22 @@
+Statistics for abc for the sat case:
+Number of generated tests: 4974
+Number of passed tests: 4130
+Number of failed tests: 844
+Transformation: const
+	Number of generated tests: 3568
+	Number of passed tests: 3145
+	Number of failed tests: 423
+			unsat: 275
+			error: 148
+Transformation: operation
+	Number of generated tests: 12
+	Number of passed tests: 11
+	Number of failed tests: 1
+			unsat: 1
+Transformation: termSyn
+	Number of generated tests: 1394
+	Number of passed tests: 974
+	Number of failed tests: 420
+			unsat: 175
+			error: 245
+

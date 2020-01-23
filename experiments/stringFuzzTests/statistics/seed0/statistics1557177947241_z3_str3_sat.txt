@@ -1,0 +1,40 @@
+Statistics for z3_str3 for the sat case:
+Number of generated tests: 640
+Number of passed tests: 558
+Number of failed tests: 82
+Transformation: lengths-short
+	Number of generated tests: 100
+	Number of passed tests: 100
+	Number of failed tests: 0
+Transformation: lengths-long
+	Number of generated tests: 100
+	Number of passed tests: 100
+	Number of failed tests: 0
+Transformation: lengths-concats
+	Number of generated tests: 100
+	Number of passed tests: 100
+	Number of failed tests: 0
+Transformation: concats-balanced
+	Number of generated tests: 100
+	Number of passed tests: 60
+	Number of failed tests: 40
+			timeout: 40
+Transformation: concats-big
+	Number of generated tests: 60
+	Number of passed tests: 20
+	Number of failed tests: 40
+			timeout: 40
+Transformation: concats-small
+	Number of generated tests: 60
+	Number of passed tests: 60
+	Number of failed tests: 0
+Transformation: regex-big
+	Number of generated tests: 60
+	Number of passed tests: 58
+	Number of failed tests: 2
+			timeout: 2
+Transformation: regex-small
+	Number of generated tests: 60
+	Number of passed tests: 60
+	Number of failed tests: 0
+

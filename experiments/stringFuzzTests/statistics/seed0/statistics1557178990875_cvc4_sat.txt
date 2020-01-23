@@ -1,0 +1,39 @@
+Statistics for cvc4 for the sat case:
+Number of generated tests: 640
+Number of passed tests: 566
+Number of failed tests: 74
+Transformation: lengths-short
+	Number of generated tests: 100
+	Number of passed tests: 100
+	Number of failed tests: 0
+Transformation: lengths-long
+	Number of generated tests: 100
+	Number of passed tests: 100
+	Number of failed tests: 0
+Transformation: lengths-concats
+	Number of generated tests: 100
+	Number of passed tests: 100
+	Number of failed tests: 0
+Transformation: concats-balanced
+	Number of generated tests: 100
+	Number of passed tests: 100
+	Number of failed tests: 0
+Transformation: concats-big
+	Number of generated tests: 60
+	Number of passed tests: 60
+	Number of failed tests: 0
+Transformation: concats-small
+	Number of generated tests: 60
+	Number of passed tests: 60
+	Number of failed tests: 0
+Transformation: regex-big
+	Number of generated tests: 60
+	Number of passed tests: 10
+	Number of failed tests: 50
+			timeout: 50
+Transformation: regex-small
+	Number of generated tests: 60
+	Number of passed tests: 36
+	Number of failed tests: 24
+			timeout: 24
+

@@ -1,0 +1,5 @@
+Statistics for cvc4 for the sat case:
+Number of generated tests: 0
+Number of passed tests: 0
+Number of failed tests: 0
+

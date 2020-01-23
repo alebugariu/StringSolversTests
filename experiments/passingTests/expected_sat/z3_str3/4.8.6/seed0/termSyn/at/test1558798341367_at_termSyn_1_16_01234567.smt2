@@ -1,0 +1,33 @@
+(set-option :random-seed 0)
+(set-option :produce-models true)
+(set-option :produce-unsat-cores true)
+; 
+(set-info :status sat)
+(declare-fun tmp_str14 () String)
+(declare-fun tmp_int5 () Int)
+(declare-fun tmp_str0 () String)
+(assert
+ (let ((?x522 (str.++ tmp_str14 tmp_str14)))
+ (let ((?x2514 (str.indexof tmp_str0 tmp_str0 tmp_int5)))
+ (let ((?x2209 (str.++ tmp_str0 tmp_str0)))
+ (let ((?x2642 (str.at ?x2209 ?x2514)))
+ (= ?x2642 ?x522))))))
+(check-sat)
+
+(get-value (tmp_str0 tmp_int5 tmp_str14 ))
+(get-info :reason-unknown)
+
+;tmp_str0 = a
+;tmp_int5 = -1
+;tmp_str14 = 
+
+
+;actual status: sat
+;((tmp_str0 "UCU")
+; (tmp_int5 (- 8856))
+; (tmp_str14 ""))
+
+;model:
+;Int tmp_int5 = -8856
+;String tmp_str0 = UCU
+;String tmp_str14 = 

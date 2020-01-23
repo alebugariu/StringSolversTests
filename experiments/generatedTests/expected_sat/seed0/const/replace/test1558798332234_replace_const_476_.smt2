@@ -1,0 +1,14 @@
+(set-option :random-seed 0)
+(set-option :produce-models true)
+(set-option :produce-unsat-cores true)
+; 
+(set-info :status sat)
+(assert
+ (let ((?x191 (str.replace "2" "\x07" "\n")))
+ (= ?x191 "2")))
+(check-sat)
+
+(get-info :reason-unknown)
+
+
+
