@@ -41,8 +41,8 @@ and its dependencies.
 To check that the installation is successful and to run our tool:
 ```
 chmod +x run.sh
-./run.sh
+./run.sh -help
 ```
-This should output the supported options.
+This will output the supported options.
 More information about our benchmarks and details on how to use the tool to (re)run our experiments can be found [here](/EXPERIMENTS.md).
 
