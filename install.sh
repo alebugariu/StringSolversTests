@@ -2,12 +2,12 @@
 
 ROOT=~/icse513
 
-mkdir $ROOT
-cd $ROOT
-
 PATH_SMTSolvers=$ROOT/SMTSolvers
 PATH_SolversTests="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null 2>&1 && pwd )"
 PATH_ABC=$ROOT/AutomataBasedSolvers
+
+mkdir $ROOT
+cd $ROOT
 
 # download (and build) the SMT solvers versions used in our experiments in the folder SMTSolvers
 mkdir $PATH_SMTSolvers
