@@ -44,5 +44,5 @@ chmod +x run.sh
 ./run.sh
 ```
 This should output the supported options.
-More information about our bechnmarks and details on how to use the tool to (re)run our experiments can be found [here](/EXPERIMENTS.md).
+More information about our benchmarks and details on how to use the tool to (re)run our experiments can be found [here](/EXPERIMENTS.md).
 
