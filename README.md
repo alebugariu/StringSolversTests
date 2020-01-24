@@ -30,7 +30,7 @@ The script runs for ~25 min and performs the following steps:
   + it downloads [Z3](https://github.com/Z3Prover/z3) version 4.8.6.
   + it downloads [CVC4](https://cvc4.github.io/) version 1.6.
   + it downloads [CVC4](https://cvc4.github.io/) version 1.7.
-* creates a config.txt file in our project, containg the paths to the SMT solvers previously downloaded. The config file follows
+* creates a config.txt file in our project, containing the paths to the SMT solvers previously downloaded. The config file follows
 the [template](/src/config_template.txt). 
 * creates a folder ROOT/AutomataBasedSolvers in which it downloads and builds the automata-based solver 
 [ABC](https://github.com/vlab-cs-ucsb/ABC) (the [commit](https://github.com/vlab-cs-ucsb/ABC/commit/86b00141fddd183de7b9ae5c92c240e19dda1950) used in our experiments) 
@@ -38,7 +38,7 @@ and its dependencies.
 * compiles our project.
 
 # Usage
-To check that the installation is succesfull and to run our tool:
+To check that the installation is successful and to run our tool:
 ```
 chmod +x run.sh
 ./run.sh
