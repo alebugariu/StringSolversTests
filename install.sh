@@ -52,8 +52,8 @@ cd $PATH_SolversTests
 echo "z3_seq_471 = $PATH_SMTSolvers/z3_4.7.1/build/z3_seq
 z3_str3_471 = $PATH_SMTSolvers/z3_4.7.1/build/z3_str3
 cvc4_16 =$PATH_SMTSolvers/cvc4_1.6/cvc4
-z3_seq_486 = $PATH_SMTSolvers/z3_4.8.6/lib/z3_seq
-z3_str3_486 = $PATH_SMTSolvers/z3_4.8.6/lib/z3_str3
+z3_seq_486 = $PATH_SMTSolvers/z3_4.8.6/bin/z3_seq
+z3_str3_486 = $PATH_SMTSolvers/z3_4.8.6/bin/z3_str3
 cvc4_17 = $PATH_SMTSolvers/cvc4_1.7/cvc4" > src/config.txt
 
 # install the MT-ABC version (commit 86b00141fddd183de7b9ae5c92c240e19dda1950) used in our experiments in the folder AutomataBasedSolvers
