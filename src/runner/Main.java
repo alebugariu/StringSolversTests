@@ -147,6 +147,10 @@ public class Main {
 		}
 
 		File folder = new File(folderName);
+		if (!folder.exists()) {
+			printStatistics(statistics, smtSolver, expectedStatus);
+			return;
+		}
 		Collection<File> files = FileUtils.listFiles(folder, new String[] { extension }, true);
 		if (checkResult) {
 			List<String> filteredVersions = new ArrayList<String>();
