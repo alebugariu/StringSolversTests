@@ -156,7 +156,10 @@ public class Main {
 			List<String> filteredVersions = new ArrayList<String>();
 			filteredVersions.add(SMTStringUtils.extractVersion(runner.getFullPathSmtSolver()));
 			if (latestVersion) {
-				filteredVersions.add(SMTStringUtils.otherVersion(smtSolver));
+				String otherVersion = SMTStringUtils.otherVersion(smtSolver);
+				if (otherVersion != null) {
+					filteredVersions.add(otherVersion);
+				}
 			}
 			files = filterFiles(files, randomSeed, expectedStatus, filteredVersions);
 		}
