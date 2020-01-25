@@ -604,7 +604,7 @@ public class SMTStringUtils {
 		if (solverName.contains("z3")) {
 			return "4.8.4";
 		}
-		return "";
+		return null;
 	}
 
 	public static void moveFileToFolder(File file, String folderName, String smtTestFileName) {
