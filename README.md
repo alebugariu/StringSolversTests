@@ -23,7 +23,7 @@ Run the script install.sh:
 ```
 ./install.sh
 ```
-The script runs for ~25 min and performs the following steps:
+The script runs for **~25 min** and performs the following steps:
 * creates a folder ROOT/SMTSolvers in which:
   + it downloads [Z3](https://github.com/Z3Prover/z3) version 4.7.1, applies a patch for supporting the operations int.to.str and str.to.int from the Java API and 
   builds the solver from sources with the Java bindings.
@@ -34,7 +34,7 @@ The script runs for ~25 min and performs the following steps:
 the [template](/src/config_template.txt). 
 * creates a folder ROOT/AutomataBasedSolvers in which it downloads and builds the automata-based solver 
 [ABC](https://github.com/vlab-cs-ucsb/ABC) (the [commit](https://github.com/vlab-cs-ucsb/ABC/commit/86b00141fddd183de7b9ae5c92c240e19dda1950) used in our experiments) 
-and its dependencies.
+and its dependencies. This step requires sudo access.
 * compiles our project.
 
 # Usage
