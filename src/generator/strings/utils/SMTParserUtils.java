@@ -456,10 +456,10 @@ public class SMTParserUtils {
 		return ctx.parseSMTLIB2String(smtFileContent, null, null, null, null);
 	}
 
-	public static void createABCFile(File smtFile) throws IOException {
-		String abcFolderPrefix = "abcTests";
+	public static void createABCFile(String testsFolder, File smtFile) throws IOException {
+		String abcFolderPrefix = "abcTests/";
 		String fileName = smtFile.getCanonicalPath();
-		fileName = fileName.replace(AbstractExpressionsGenerator.generatedTestsFolder, abcFolderPrefix);
+		fileName = fileName.replace(testsFolder, abcFolderPrefix);
 		File abcFile = new File(fileName);
 
 		if (abcFile.exists()) {

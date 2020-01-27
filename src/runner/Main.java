@@ -274,7 +274,7 @@ public class Main {
 					if (expectedStatus == Status.unsat && !supportedOperationsList.contains(operationName)) {
 						continue;
 					}
-					SMTParserUtils.createABCFile(file);
+					SMTParserUtils.createABCFile(testsFolder, file);
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
@@ -559,13 +559,13 @@ public class Main {
 			// pre-process our test suite for ABC (remove annotations and let expressions,
 			// replace double quotes in constant strings with \")
 			// remove the tests that contain non-ASCII strings
-			generateABCTestSuite(randomSeed, "generatedTests/", "smt2");
+			generateABCTestSuite(randomSeed, "experiments/generatedTests/", "smt2");
 			return;
 		}
 		if (cmd.hasOption("testABC")) {
 			// -testABC
 			// test ABC on our (modified) test suite
-			testABC(randomSeed, "abcTests/", "smt2");
+			testABC(randomSeed, "experiments/abcTests/", "smt2");
 			return;
 		}
 		formatter.printHelp("string solvers tests", options);
