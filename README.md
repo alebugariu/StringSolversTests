@@ -11,8 +11,7 @@ The tool has been tested on Ubuntu 16.04 with Java 8. Building [Z3](https://gith
 To install the prerequisites:
 
 ```
-sudo apt-get install -y openjdk-8-jdk python
-sudo apt install build-essential autoconf automake libtool intltool
+sudo apt-get install -y openjdk-8-jdk python build-essential autoconf automake libtool intltool
 ```
 
 
