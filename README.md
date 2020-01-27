@@ -6,9 +6,7 @@ SMT and automata-based string solvers. Our generated test cases, the SMT-LIB enc
 results we obtained for the solvers under test can be found in the folder [experiments](/experiments).
 
 # Requirements 
-The tool has been tested on Ubuntu 16.04 with Java 8. Building [Z3](https://github.com/Z3Prover/z3) version 4.7.1 also requires Python 2.7 and [ABC](https://github.com/vlab-cs-ucsb/ABC) requires autotools:
-
-To install the prerequisites:
+The tool has been tested on Ubuntu 16.04 with Java 8. Building [Z3](https://github.com/Z3Prover/z3) version 4.7.1 requires Python 2.7 and building [ABC](https://github.com/vlab-cs-ucsb/ABC) requires autotools. To install the prerequisites:
 
 ```
 sudo apt-get install -y openjdk-8-jdk python build-essential autoconf automake libtool intltool
