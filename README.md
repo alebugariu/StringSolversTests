@@ -1,5 +1,5 @@
 # String Solvers Tests
-This repository provides the artifact for the paper: "Automatically Testing String Solvers", A. Bugariu and P. Müller, ICSE'20 [To appear]. 
+This repository provides the artifact for the paper: "Automatically Testing String Solvers", A. Bugariu and P. Müller, ICSE'20 \[[To appear](https://www.research-collection.ethz.ch/handle/20.500.11850/397450)\]. 
 The tool synthesizes input formulas in SMT-LIB 2.6 format that are satisfiable or unsatisfiable by construction, together with 
 a model, or with the minimal unsat core, respectively. These inputs are then used for testing the implementation of 
 SMT and automata-based string solvers. Our generated test cases, the SMT-LIB encoding of the examples from the paper and the 
