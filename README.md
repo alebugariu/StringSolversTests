@@ -6,9 +6,17 @@ SMT and automata-based string solvers. Our generated test cases, the SMT-LIB enc
 results we obtained for the solvers under test can be found in the folder [experiments](/experiments).
 
 # Setup
-We provide a Docker image, as well as step by step instructions on how to install the dependencies and build our tool. 
+We provide a [Docker](https://www.docker.com/) image, as well as step by step instructions on how to install the dependencies and build our tool. 
 
 ## Using Docker
+Download our Docker image:
+```
+docker pull alebugariu/string_solvers_tests:1.0
+```
+Start the container:
+```
+docker run -it alebugariu/string_solvers_tests:1.0
+```
 
 ## Without Docker
 
