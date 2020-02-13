@@ -5,15 +5,19 @@ a model, or with the minimal unsat core, respectively. These inputs are then use
 SMT and automata-based string solvers. Our generated test cases, the SMT-LIB encoding of the examples from the paper and the 
 results we obtained for the solvers under test can be found in the folder [experiments](/experiments).
 
-# Requirements 
+# Setup
+We provide a Docker image, as well as step by step instructions on how to install the dependencies and build our tool. 
+
+## Using Docker
+
+## Without Docker
+
 The tool has been tested on Ubuntu 16.04 with Java 8. Building [Z3](https://github.com/Z3Prover/z3) version 4.7.1 requires Python 2.7 and building [ABC](https://github.com/vlab-cs-ucsb/ABC) requires autotools, [Flex](https://github.com/westes/flex) and [Bison](https://www.gnu.org/software/bison/). To install the prerequisites:
 
 ```
 sudo apt-get install -y openjdk-8-jdk python build-essential autoconf automake libtool intltool flex bison
 ```
 
-
-# Setup
 Clone our repository:
 
 ```
@@ -51,6 +55,7 @@ This command will list the available options.
 
 To run our tool:
 ```
+cd StringSolversTests
 chmod +x run.sh
 ./run.sh -help
 ```
