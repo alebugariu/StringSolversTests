@@ -291,7 +291,7 @@ public class TestsRunner {
 		int length = names.length;
 		String smtTestFileName = names[length - 1];
 
-		if (!toolFolderName.equals("generatedTests")) {
+		if (!toolFolderName.equals("experiments/generatedTests/")) {
 			// not our test suite
 			smtTestFileName = names[length - 2] + "/" + smtTestFileName;
 		}
