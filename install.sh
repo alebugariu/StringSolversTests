@@ -70,5 +70,6 @@ cd build
 cd $PATH_SolversTests
 mkdir classes
 javac -d classes -cp "jars/commons-lang3-3.7.jar:jars/commons-io-2.6.jar:jars/commons-cli-1.4.jar:$PATH_SMTSolvers/z3_4.7.1/build/com.microsoft.z3.jar" -sourcepath src src/runner/Main.java
+chmod +x run.sh
 
 export LD_LIBRARY_PATH=$PATH_SMTSolvers/z3_4.7.1/build
