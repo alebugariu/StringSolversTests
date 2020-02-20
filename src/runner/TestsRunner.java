@@ -97,6 +97,9 @@ public class TestsRunner {
 		for (String definition : definitions) {
 
 			int firstIndexOfSpace = definition.indexOf(" ");
+			if (firstIndexOfSpace < 1) {
+				return null;
+			}
 			variable = definition.substring(0, firstIndexOfSpace);
 			if (variable.startsWith("(")) {
 				variable = variable.substring(1, variable.length());
@@ -219,6 +222,17 @@ public class TestsRunner {
 			if (actualStatus == Status.sat) {
 				output = output.replace("sat", "");
 				Map<String, List<String>> model = readModel(output);
+				if (model == null) {
+					System.out.println(smtSolver + " File: " + smtTestFileName + " model in unexpected format!");
+					System.out.println();
+					System.out.println(
+							"*********************************************************************************************");
+					System.out.println();
+					actualStatus = Status.error;
+					moveFileToResultsFolder(expectedStatus, actualStatus, file, smtTestFileName, false);
+					out.close();
+					return actualStatus;
+				}
 				if (!model.isEmpty()) {
 					addModelToFile(out, model);
 					// check if the model is correct
@@ -359,6 +373,17 @@ public class TestsRunner {
 				if (actualStatus == Status.sat) {
 					output = output.replace("sat", "");
 					Map<String, List<String>> model = readModel(output);
+					if (model == null) {
+						System.out.println(smtSolver + " File: " + smtTestFileName + " model in unexpected format!");
+						System.out.println();
+						System.out.println(
+								"*********************************************************************************************");
+						System.out.println();
+						actualStatus = Status.error;
+						copyFileToResultsFolder(expectedStatus, actualStatus, output, file, smtTestFileName,
+								toolFolderName, false);
+						return actualStatus;
+					}
 					if (!testableModel(model)) {
 						actualStatus = Status.big_model;
 						String resultFileName = copyFileToResultsFolder(expectedStatus, actualStatus, output, file,
