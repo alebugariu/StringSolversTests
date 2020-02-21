@@ -13,7 +13,7 @@ Download our Docker image:
 ```
 docker pull alebugariu/string_solvers_tests:1.0
 ```
-or build it from the [Dockerfile](/Dockerfile) provided in our repository:
+or build it from the [Dockerfile](/Dockerfile) provided in our repository (this takes **~30 min**):
 ```
 git clone https://github.com/alebugariu/StringSolversTests.git StringSolversTests
 cd StringSolversTests
